@@ -8,7 +8,6 @@ Este projeto é uma análise exploratória de dados (EDA) realizada **inteiramen
 
 O foco não é apenas extrair dados, mas **formular hipóteses, testá-las com queries e interpretar os resultados** — simulando o dia a dia de um analista de dados.
 
----
 
 ## Dataset
 
@@ -35,7 +34,6 @@ O foco não é apenas extrair dados, mas **formular hipóteses, testá-las com q
 | `month` | Mês do contato |
 | `y` | Aderiu ao depósito? (sim/não) |
 
----
 
 ## Estrutura da Análise
 
@@ -59,41 +57,40 @@ Avaliação de sazonalidade, duração das chamadas e impacto do follow-up (reco
 ## Principais Achados
 
 ### 📌 Taxa de conversão geral é baixa (~11,5%)
+<img src="imagens/conversao_geral.png" width="600">
 88% dos contatos não resultam em adesão, indicando oportunidade de otimização na seleção de leads.
 
 ### 📌 Aposentados e estudantes são os perfis que mais convertem
-Aposentados convertem ~23% (maior saldo, menos despesas) e estudantes ~22% (menor saldo, mas maior disposição). São motivações diferentes: **capital disponível vs. visão de futuro**.
+<img src="imagens/conversao_profissao.png" width="800">
+Aposentados convertem ~23% (maior saldo, menos despesas) e estudantes ~22% (menor saldo, mas maior disposição). São motivações diferentes: capital disponível vs. visão de futuro.
 
 ### 📌 Saldo influencia, mas não explica tudo
-Clientes com maior saldo convertem mais na maioria dos casos. Porém, a faixa 18-30 anos tem o menor saldo médio e a segunda maior taxa de conversão — indicando que **motivação e disposição também pesam**.
+<img src="imagens/faixa_etaria_saldo.png" width="800">
+Clientes com maior saldo convertem mais na maioria dos casos. Porém, a faixa 18-30 anos tem o menor saldo médio e a segunda maior taxa de conversão — indicando que motivação e disposição também pesam.
 
 ### 📌 Maior escolaridade → maior saldo → maior conversão
-A escolaridade (tertiary) lidera em conversão (14,3%), mas a investigação mostrou que a correlação se mantém com o saldo. O caminho provável é: **mais estudo → melhor emprego → mais saldo → mais conversão**.
+<img src="imagens/escolaridade_cadeia.png" width="900">
+A escolaridade (tertiary) lidera em conversão (14,3%), mas a investigação mostrou que a correlação se mantém com o saldo. O caminho provável é: mais estudo → melhor emprego → mais saldo → mais conversão.
 
 ### 📌 Sazonalidade: final do ano converte mais, maio converte menos
-Outubro e dezembro têm as maiores taxas de conversão (46% e 45%), porém com amostras pequenas. Maio concentra o maior volume de contatos (1398) com a pior conversão (6,6%) — possível problema de **quantidade vs. qualidade**.
+<img src="imagens/sazonalidade_meses.png" width="900">
+Outubro e dezembro têm as maiores taxas de conversão (46% e 45%), porém com amostras pequenas. Maio concentra o maior volume de contatos (1398) com a pior conversão (6,6%) — possível problema de quantidade vs. qualidade.
 
 ### 📌 Follow-up mais que dobra a taxa de conversão
-Clientes recontactados convertem ~22,5% vs. ~9% no primeiro contato. Esse efeito se mantém independente do mês, confirmando que **não é sazonalidade — o recontato é um fator real**.
-
----
+<img src="imagens/followup_conversao.png" width="800">
+Clientes recontactados convertem ~22,5% vs. ~9% no primeiro contato. Esse efeito se mantém independente do mês, confirmando que não é sazonalidade, o recontato é um fator real.
 
 ## Técnicas SQL Utilizadas
 
 - `SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`
 - Funções de agregação: `COUNT`, `AVG`, `SUM`
 - `CASE WHEN` para criação de faixas e flags
-- Análise cruzada de múltiplas variáveis
-
----
 
 ## Ferramentas
 
 - **MySQL** — execução das queries
 - **MySQL Workbench**
 - **Dataset:** Bank Marketing (UCI Machine Learning Repository)
-
----
 
 ## Próximos Passos
 
@@ -103,13 +100,11 @@ Os insights extraídos nesta análise servem como base para etapas futuras de um
 - **Modelagem Preditiva** — utilizar os dados preparados para treinar modelos de classificação (ex: prever adesão ao depósito)
 - **Segmentação de Clientes** — aplicar clustering para definir perfis de abordagem distintos
 
----
 
 ## Aprendizados com o Projeto
 
 Este projeto foi desenvolvido como parte do meu aprendizado em SQL com base na aula da **Universidade dos Dados** by (Andre Yukio). Mais do que praticar sintaxe, o objetivo foi exercitar o pensamento analítico, formular hipóteses a partir dos dados, testá-las com queries e interpretar os resultados com visão de negócio.
 
----
 
 ## Contato
 
