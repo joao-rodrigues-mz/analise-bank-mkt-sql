@@ -1,4 +1,4 @@
-# 🏦 Análise de Campanhas de Telemarketing Bancário — SQL
+# Análise de Campanhas de Telemarketing Bancário — SQL
 
 *13 perguntas que a IA poderia responder, mas mesmo assim eu quis treinar* 🤖
 
