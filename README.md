@@ -12,7 +12,7 @@ O foco não é apenas extrair dados, mas **formular hipóteses, testá-las com q
 
 ## Dataset
 
-- **Fonte:** [Bank Marketing Dataset — UCI / Kaggle](https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset)
+- **Fonte:** [Bank Marketing Dataset — UCI] (https://archive.ics.uci.edu/dataset/222/bank+marketing)
 - **Registros:** 4.521 clientes
 - **Colunas:** 17 variáveis (demográficas, financeiras e de campanha)
 - **Variável alvo:** `y` — se o cliente aderiu ao depósito a prazo (yes/no)
@@ -90,7 +90,7 @@ Clientes recontactados convertem ~22,5% vs. ~9% no primeiro contato. Esse efeito
 ## Ferramentas
 
 - **MySQL** — execução das queries
-- **MySQL Workbench** — IDE utilizada
+- **MySQL Workbench**
 - **Dataset:** Bank Marketing (UCI Machine Learning Repository)
 
 ---
